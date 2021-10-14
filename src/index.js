@@ -10,11 +10,7 @@ app.set('view engine', 'ejs');
 // middlewares
 
 // routes
-app.get('/', (req, res) => {
-    //res.sendFile(path.join(__dirname, 'views/index.html'));
-    res.render('index', { title: 'First Web'});
-});
-
+app.use(require('./routes/index'));
 // static files
 
 // listening the server
