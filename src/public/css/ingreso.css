@@ -1,0 +1,63 @@
+.main-welcome {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    top: 20px;
+    left: 20px;    
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+
+    color: #FFFFFF;
+}
+.main-container--informacion{
+    position: absolute;
+    width: 280px;
+    height: 40px;
+
+    background: #262626;
+    border-radius: 5px;
+}
+.main-container--informacion input{
+    position: absolute;
+    width: 230px;
+    height: 20px;
+    top: 10px;
+    left: 50px;
+
+    background: none;
+    border: 2px solid #262626;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+
+    color: white;
+}
+.box-name{
+    top: 80px;
+    left: 20px;
+}
+.box-password{
+    top: 140px;
+    left: 20px;
+}
+.main-container--icono{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 3rem;
+    color:white;
+}
+.main-container--icono-lock{
+    position: absolute;
+    top: 10px;
+    left: 245px;
+    font-size: 2rem;
+    color:white;
+}

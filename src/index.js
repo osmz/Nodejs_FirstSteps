@@ -2,17 +2,19 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-// settings
+// Settings
 app.set('port', 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs')
 
-// middlewares
+// Middlewares
 
-// routes
+// Routes
 app.use(require('./routes/index'));
-// static files
+
+// Statis files
+app.use(express.static(path.join(__dirname, 'public')));
 
 // listening the server
 app.listen(app.get('port'), () => {

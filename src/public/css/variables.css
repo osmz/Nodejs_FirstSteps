@@ -1,0 +1,25 @@
+/*
+    1. Positioning
+    2. Box Model
+    3. Typography
+    4. Visuals
+    5. Others
+*/
+:root{
+    /*Colors*/
+    --ReyCopas-backgorund: #FAA307;
+    --ReyCopas-backgorund2: #1D1D1D;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: Merriweather;
+    background-color: var(--ReyCopas-backgorund2);
+}
+body {
+    font-size: 1.6rem;
+}
