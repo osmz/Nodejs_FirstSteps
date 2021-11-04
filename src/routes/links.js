@@ -42,8 +42,24 @@ router.post('/add', (req,res) =>{ // <- La función middleware ya no es async
         // ...
         // hacemos algo con los resultados (si lo necesitamos)
         // ...
-        return res.status(200).send('recibido'); // <- enviamos mensaje al cliente
+        // return res.status(200).send('recibido'); // <- enviamos mensaje al cliente
+        res.redirect('/links');
     });
+});
+
+router.get('/', async (req, res) => {
+    const links = await pool.query('SELECT * FROM product');
+    console.log(links);
+    // res.send('Listas iran aqui');
+    res.render('list.html', { links:links });
+});
+
+router.get('/delete/:id', async (req, res) => {
+    // console.log(req.params.id);
+    // res.send('DELETED');
+    const { id } = req.params;
+    await pool.query('DELETE FROM product WHERE ID = ?', [id]);
+    res.redirect('/links');
 });
 
 module.exports = router;
