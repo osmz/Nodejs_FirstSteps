@@ -9,8 +9,8 @@ router.get('/ingreso', (req, res) => {
     res.render('ingreso.html');
 });
 
-router.get('/contact', (req, res) => {
-    res.render('contact.html');
+router.get('/add', (req, res) => {
+    res.render('add.html');
 });
 
 module.exports = router;

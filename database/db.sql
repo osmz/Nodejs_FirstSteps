@@ -19,7 +19,7 @@ ALTER TABLE users
 DESCRIBE users;
 
 -- PRODUCT TABLES
-CREATE TABLE Product (
+CREATE TABLE product (
     id INT(11) NOT NULL,
     nome VARCHAR(100) NOT NULL,
     tipo VARCHAR(50) NOT NULL,
@@ -29,8 +29,8 @@ CREATE TABLE Product (
     CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
-ALTER TABLE Product
+ALTER TABLE product
     ADD PRIMARY KEY (id);
 
-ALTER TABLE Product
+ALTER TABLE product
     MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
