@@ -20,14 +20,14 @@
         <p>Bienvenido !</p> 
     </section>
     <section>
-        <form class="uno" action="main-form--container" method="">
-            <label for="nombre" class="main-container--informacion">
+        <form class="uno" action="/signin" method="POST">
+            <label for="username" class="main-container--informacion">
                 <i class="fas fa-user-alt main-container--icono"></i>
-                <input class="teste" type="text" id="nombre" name="nombre" placeholder="Usuario o e-mail" autocomplete="name" required/>
+                <input class="teste" type="text" name="username" placeholder="Usuario o e-mail" autocomplete="name" required/>
             </label>
-            <label for="contraseña" class="main-container--informacion box-password">
+            <label for="password" class="main-container--informacion box-password">
                 <i class="fas fa-lock main-container--icono"></i>
-                <input class="teste" type="text" id="contraseña" name="contraseña" placeholder="Contraseña" autocomplete="name" required/>
+                <input class="teste" type="text" name="password" placeholder="Contraseña" autocomplete="name" required/>
                 <i class="fas fa-eye-slash main-container--icono-view"></i>
             </label>
         </form>
@@ -42,6 +42,9 @@
         <i class="fas fa-toggle-off main-terms--icono"></i>
         <p>Soy mayor de 18 años</p>
     </section>
-    <button class="boton"><a href="/">Ingresar</a></button>
+    <!-- <button class="boton"><a href="/"></a>Ingresar</a></button> -->
+    <button class="btn btn-successs btn-block">
+        Ingresar
+    </button>
 </body>
 </html>

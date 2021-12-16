@@ -62,4 +62,10 @@ router.get('/delete/:id', async (req, res) => {
     res.redirect('/links');
 });
 
+router.get('/edit/:id', async (req,res) => {
+    const { id } = req.params;
+    console.log(id);
+    res.send('received');
+});
+
 module.exports = router;
