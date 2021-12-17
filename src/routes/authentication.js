@@ -40,7 +40,10 @@ router.post('/signin', passport.authenticate('local.signin', {
 }));
 
 router.get('/profile', (req, res) => {
-    res.send('this is your profile');
+    res.render('profile.html');
+    // const user = req.user;
+    // console.log(req.user);
+    // res.render('profile.html', { user:user });
 });
 
 module.exports = router;
