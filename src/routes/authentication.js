@@ -31,7 +31,8 @@ router.post('/signup', passport.authenticate('local.signup', {
 // });
 
 router.get('/signin', (req, res) => {
-    res.render('prueba1.html');
+    res.render('auth/signin.html');
+    // res.render('prueba1.html');
 });
 
 router.post('/signin', passport.authenticate('local.signin', {
@@ -41,9 +42,10 @@ router.post('/signin', passport.authenticate('local.signin', {
 
 router.get('/profile', (req, res) => {
     res.render('profile.html');
-    // const user = req.user;
-    // console.log(req.user);
-    // res.render('profile.html', { user:user });
+});
+
+router.get('/prueba1', (req, res) => {
+    res.render('prueba1.html');
 });
 
 module.exports = router;
