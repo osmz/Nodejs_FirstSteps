@@ -48,4 +48,9 @@ router.get('/prueba1', (req, res) => {
     res.render('prueba1.html');
 });
 
+router.get('/logout', (req, res) => {
+    req.logout();
+    res.redirect('mainPage');
+});
+
 module.exports = router;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,9 +16,10 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/ingreso.css">
 </head>
+
 <body>
     <section class="main-welcome">
-        <p>Bienvenido !</p> 
+        <p>Bienvenido !</p>
     </section>
     <section>
         <form class="uno" action="/signin" method="POST">
@@ -36,11 +38,11 @@
                 Ingresar
             </button>
         </form>
-    </section>  
+    </section>
     <section class="main-password--container">
         <button class="main-password-container--item"><a href="/">Olvide la contraseña</a></button>
         <button class="main-password-container--item"><a href="/">Crear una cuenta</a></button>
-    </section> 
+    </section>
     <section class="main-terms--container">
         <i class="fas fa-toggle-off main-terms--icono"></i>
         <p>Mantener conectado</p>
@@ -48,7 +50,7 @@
         <p>Soy mayor de 18 años</p>
     </section>
     <!-- <button class="boton"><a href="/"></a>Ingresar</a></button> -->
-    
+
 
 
 
@@ -68,7 +70,8 @@
                                 <input type="text" name="username" placeholder="username prueba " class="form-control">
                             </div>
                             <div class="form-group">
-                                <input type="password" name="password" placeholder="Password prueba" class="form-control">
+                                <input type="password" name="password" placeholder="Password prueba"
+                                    class="form-control">
                             </div>
                             <div class="form-goup">
                                 <button class="btn btn-successs btn-block">
@@ -86,8 +89,18 @@
 
 <h3>Que mas pues</h3>
 
-<% if(user.username ==='qaz'){%>
+<!-- <% if(user.username ==='qaz'){%>
     hola mas una prueba
-    <% } else{ %>  
-        <h1>bar</h1>
-     <% } %>
+<% } else{ %>
+    <h1>bar</h1>
+<% } %> -->
+
+<% if(user){%>
+    hola mas una prueba
+<% } else{ %>
+    <h1>bar</h1>
+<% } %>
+
+<button class="btn btn-successs btn-block">
+    <a href="/logout">Logout</a> 
+</button>

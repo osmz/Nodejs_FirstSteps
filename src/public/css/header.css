@@ -1,0 +1,62 @@
+.container-fluid{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    background: var(--ReyCopas-black);
+    color: #FFFFFF;
+}
+.user-data{
+    padding-right: 20px;
+    text-align: end;
+    width: 60vw;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+}
+/* --------------- SLIDE BAR --------------- */
+.offcanvas{
+    width: 50vw;
+    background: var(--ReyCopas-black);
+    color: #FFFFFF;
+}
+.offcanvas-header{
+    position: relative;
+    display: block;
+    margin: 5px 0px 5px 5px;
+}
+.nav-icons{
+    align-items: center;
+    display: flex;
+}
+.nav-icons button{
+    position: absolute;
+    left: calc(100% - 40px);
+}
+.nav-dir{
+    display: flex;
+}
+.nav-dir i{
+    margin: 0px 10px 0px 0px;
+}
+.nav-item{
+    display: flex;
+    width: 50vw;
+    border-top: 1px solid #FFFFFF;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+}
+.nav-item i{
+    margin: 0px 10px 0px 10px;
+}
+.items, .fa-glass-cheers, .fa-sign-out-alt{
+    color: #FFFFFF;
+}
+.bi-arrow-left{
+    font-size: 3rem;
+    border: none;
+    background: none;
+    color: #FFFFFF;
+}

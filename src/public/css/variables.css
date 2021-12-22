@@ -7,8 +7,9 @@
 */
 :root{
     /*Colors*/
-    --ReyCopas-backgorund: #FAA307;
-    --ReyCopas-backgorund2: #1D1D1D;
+    --ReyCopas-orange: #FAA307;
+    --ReyCopas-black: #262626;
+    --ReyCopas-background: #EFEFEF;    
 }
 * {
     box-sizing: border-box;
@@ -17,9 +18,10 @@
 }
 html {
     font-size: 62.5%;
-    font-family: Merriweather;
-    background-color: var(--ReyCopas-backgorund2);
+    font-family: sans-serif;
+    background-color: var(--ReyCopas-black);
 }
 body {
     font-size: 1.6rem;
+    background-color: var(--ReyCopas-background);
 }

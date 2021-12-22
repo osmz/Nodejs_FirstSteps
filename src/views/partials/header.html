@@ -1,0 +1,89 @@
+<header>
+    <section class="container-fluid">
+        <!-- toggler -->
+        <div>
+            <button class="btn float-init" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+                <i class="bi bi-list" style="font-size: 5rem; color:var(--ReyCopas-orange);" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+            </button>
+        </div>
+        <div class="user-data">
+            <p>
+                <% if(user){%>
+                    <%=user.fullname%>
+                <% } else{ %>
+                    Rey de copas
+                <% } %>
+            </p>
+        </div>
+        <div>
+            <i class="bi bi-person-bounding-box" style="font-size: 5rem; color:var(--ReyCopas-orange);"></i>
+        </div>
+    </section>
+    
+    <section class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+        <section class="offcanvas-header">
+            <div class="nav-icons">
+                <i class="bi bi-person-bounding-box" style="font-size: 5rem; color:var(--ReyCopas-orange);"></i>
+                <button type="button" class="bi bi-arrow-left" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="nav-user">
+                <p>User Name</p>
+                <div class="nav-dir">
+                    <i class="bi bi-geo-fill" style="font-size: 2rem; color:var(--ReyCopas-orange);"></i>
+                    <p>Calle falsa 123</p>
+                </div>
+            </div>
+        </section>
+        <div class="offcanvas-body px-0">
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                <li class="nav-item">
+                    <i class="bi bi-gift-fill" style="font-size: 2rem; color:#FFFFFF;"></i>
+                    <a href="#" class="nav-link"><span class="items">Promociones</span></a>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-glass-cheers"></i>
+                    <a href="#" class="nav-link"><span class="items">Cocktail Blog</span></a>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-qr-code" style="font-size: 2rem; color:#FFFFFF;"></i>
+                    <a href="#" class="nav-link"><span class="items">Verificacion del Producto</span></a>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-geo-fill" style="font-size: 2rem; color:#FFFFFF;"></i>
+                    <a href="#" class="nav-link"><span class="items">Direcciones</span> </a>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-credit-card" style="font-size: 2rem; color:#FFFFFF;"></i>
+                    <a href="#" class="nav-link"><span class="items">Metodos de Pago</span> </a>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-gear-fill" style="font-size: 2rem; color:#FFFFFF;"></i>
+                    <a href="#" class="nav-link"><span class="items">Configuración</span> </a>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-headset" style="font-size: 2rem; color:#FFFFFF;"></i>
+                    <a href="#" class="nav-link"><span class="items">Ayuda</span> </a>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-info-circle" style="font-size: 2rem; color:#FFFFFF;"></i>
+                    <a href="#" class="nav-link"><span class="items">Terminos y Condiciones</span> </a>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-info-circle" style="font-size: 2rem; color:#FFFFFF;"></i>
+                    <a href="#" class="nav-link"><span class="items">Politica de Privacidad</span></a>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-info-circle" style="font-size: 2rem; color:#FFFFFF;"></i>
+                    <a href="#" class="nav-link"><span class="items">Politica de Tratamiento de Datos</span> </a>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <a href="/logout" class="nav-link"><span class="items">Cerrar Sesión</span></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</header>
+
+
+
