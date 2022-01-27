@@ -9,7 +9,7 @@
         <div class="user-data">
             <p>
                 <% if(user){%>
-                    <%=user.username%>
+                    <%=user.fullname%>
                 <% } else{ %>
                     Rey de copas
                 <% } %>
@@ -27,13 +27,7 @@
                 <button type="button" class="bi bi-arrow-left" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="nav-user">
-                <p>
-                    <% if(user){%>
-                        <%=user.username%>
-                    <% } else{ %>
-                        Rey de copas
-                    <% } %>
-                </p>
+                <p>User Name</p>
                 <div class="nav-dir">
                     <i class="bi bi-geo-fill" style="font-size: 2rem; color:var(--ReyCopas-orange);"></i>
                     <p>Calle falsa 123</p>

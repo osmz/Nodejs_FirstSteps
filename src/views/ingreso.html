@@ -1,54 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Rey de Copas </title>
-        <!--- BOOTSTRAP -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <!-- BOOTSTRAP FONT ICON -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
-        <!--- CSS -->
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/ingreso.css">
-    </head>
-    <body>
-        <main>
-            <section class="main-signin">
-                <div class="main-welcome">
-                    <p>Bienvenido !</p> 
-                </div>
-                <form action="/ingreso" method="POST">
-                    <label class="main-container--box form-group" for="username">
-                        <i class="bi bi-person-fill main-container--icono" style="font-size: 3.5rem; top: calc(50% - 20px); left: calc(0% + 10px);"></i>
-                        <input class="main-container--data" type="text" name="username" placeholder="Usuario o e-mail" autocomplete="off" required/>
-                    </label>
-                    <label class="main-container--box form-group" for="password">
-                        <i class="bi bi-shield-lock-fill main-container--icono" style="font-size: 2.8rem; top: calc(50% - 15px); left: calc(0% + 10px);"></i>
-                        <input id="passwordValue" class="main-container--data" type="password" name="password" placeholder="Contraseña" required/>
-                        <i id="eyeIcon" class="bi bi-eye-fill main-container--icono" style="font-size: 2.8rem; top: calc(50% - 15px); left: calc(100% - 35px);" onclick="show_password('passwordValue','eyeIcon')"></i>
-                    </label>
-                    <div class="form-goup">
-                        <button class="main-container-button btn btn-successs btn-block" style="top: calc(50% + 20px);">Ingresar</button>
-                    </div>
-                </form>
-                <div class="main-container--password">
-                    <button class="main-container-password--item" type="button" role="button" style="left: calc(0%);"><a href="/">Olvide la contraseña</a></button>
-                    <button class="main-container-password--item" type="button" role="button" style="left: calc(100% - 150px);"><a href="/newUser">Crear una cuenta</a></button>    
-                </div>
-                           
-                <div class="main-container-moreOptions">
-                    <p>Entrar con</p>
-                    <button type="button" role="button">
-                        <span style="background-image: url('/img/google_icon.svg');"></span>
-                    </button>
-                    <button type="button" role="button">
-                        <span style="background-image: url('/img/facebook_icon.svg');"></span>
-                    </button>
-                </div>
-            </section> 
-        </main>
-
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rey de Copas</title>
+    <!--- Bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a707c1203c.js" crossorigin="anonymous"></script>
+    <!--- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/ingreso.css">
+</head>
+<body>
+    <section class="main-welcome">
+        <p>Bienvenido !</p> 
+    </section>
+    <section>
+        <form class="uno" action="/signin" method="POST">
+            <label for="username" class="main-container--informacion">
+                <i class="fas fa-user-alt main-container--icono"></i>
+                <input class="teste" type="text" name="username" placeholder="Usuario o e-mail" autocomplete="name" required/>
+            </label>
+            <label for="password" class="main-container--informacion box-password">
+                <i class="fas fa-lock main-container--icono"></i>
+                <input class="teste" type="text" name="password" placeholder="Contraseña" autocomplete="name" required/>
+                <i class="fas fa-eye-slash main-container--icono-view"></i>
+            </label>
+        </form>
+    </section>  
+    <section class="main-password--container">
+        <button class="main-password-container--item"><a href="/">Olvide la contraseña</a></button>
+        <button class="main-password-container--item"><a href="/">Crear una cuenta</a></button>
+    </section> 
+    <section class="main-terms--container">
+        <i class="fas fa-toggle-off main-terms--icono"></i>
+        <p>Mantener conectado</p>
+        <i class="fas fa-toggle-off main-terms--icono"></i>
+        <p>Soy mayor de 18 años</p>
+    </section>
+    <!-- <button class="boton"><a href="/"></a>Ingresar</a></button> -->
+    <button class="btn btn-successs btn-block">
+        Ingresar
+    </button>
+</body>
 </html>

@@ -6,7 +6,7 @@ const session = require('express-session');
 const MySQLStore = require('express-mysql-session');
 const passport = require('passport');
 
-const { database } = require('./routes/keys');
+const { database } = require('./keys');
 
 // Initializations
 const app = express();
@@ -41,6 +41,7 @@ app.use((req, res, next) => {
 });
 
 // Routes
+app.use(require('./routes/index'));
 app.use(require('./routes/authentication'));
 // app.use('/links', require('./routes/links'));
 

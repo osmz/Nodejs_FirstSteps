@@ -1,44 +1,17 @@
 const express = require('express');
 const router = express.Router();
 
+// const passport = require('../lib/passport');
 const passport = require('passport');
 
-router.get('/', (req, res) => {
-    res.render('index.html');
+router.get('/signup', (req, res) => {
+    res.render('auth/signup.html');
 });
 
-router.get('/mainPage', (req, res) => {
-    res.render('mainPage.html');
-});
-
-router.get('/beer', (req, res) => {
-    res.render('beer.html');
-});
-
-router.get('/newUser', (req, res) => {
-    res.render('newUser.html');
-});
-
-router.post('/newUser', passport.authenticate('local.signup', {
-    successRedirect: '/mainPage',
-    failureRedirect: '/newUser'
+router.post('/signup', passport.authenticate('local.signup', {
+    successRedirect: '/profile',
+    failureRedirect: '/signup'
 }));
-
-router.get('/ingreso', (req, res) => {
-    res.render('ingreso.html');
-});
-
-router.post('/ingreso', passport.authenticate('local.signin', {
-    successRedirect: '/mainPage',
-    failureRedirect: '/ingreso'
-}));
-
-router.get('/logout', (req, res) => {
-    req.logout();
-    res.redirect('ingreso');
-});
-
-module.exports = router;
 
 // router.get('/signin', (req, res) => {
 //     res.render('auth/signin.html');
@@ -56,3 +29,28 @@ module.exports = router;
 //         failureFlash: true
 //     }) (req, res, next);
 // });
+
+router.get('/signin', (req, res) => {
+    res.render('auth/signin.html');
+    // res.render('prueba1.html');
+});
+
+router.post('/signin', passport.authenticate('local.signin', {
+    successRedirect: '/profile',
+    failureRedirect: '/signin'
+}));
+
+router.get('/profile', (req, res) => {
+    res.render('profile.html');
+});
+
+router.get('/prueba1', (req, res) => {
+    res.render('prueba1.html');
+});
+
+router.get('/logout', (req, res) => {
+    req.logout();
+    res.redirect('mainPage');
+});
+
+module.exports = router;
