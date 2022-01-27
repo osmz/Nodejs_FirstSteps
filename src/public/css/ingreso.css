@@ -1,137 +1,113 @@
-.main-welcome {
+.main-signin {
     position: relative;
-    margin: 20px auto 20px auto;
-    width: 200px;
-    height: 20px;
-
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.8rem;
-    line-height: 2rem;
-
-    color: #FFFFFF;
-}
-.uno{
-    position: relative;
-    height: 140px;
-}
-.main-container--informacion{
-    position: absolute;
-    margin: 20px auto 0px auto;
-    max-width: 400px;
-    height: 40px;
-    left: 20px;
-    right: 20px;
-
-    background: #262626;
-    border-radius: 5px;
-}
-.main-container--informacion input{
-    position: absolute;
-    width: 80%;
-    height: 20px;
-    top: 10px;
-    left: 50px;
-
-    background: none;
-    border: 2px solid #262626;
-    border-radius: 5px;
-    cursor: pointer;
-
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-
+    padding: 30px 20px 20px 20px;
+    background: var(--ReyCopas-black);
     color: white;
-}
-.box-password{
-    margin-top: 80px;
-}
-.main-container--icono{
-    position: relative;
-    top: 5px;
-    left: 10px;
-    font-size: 3rem;
-    color:white;
-}
-.main-container--icono-view{
-    position: relative;
-    left: calc(100% - 60px);
-    font-size: 2rem;
-    color:white;
-}
-.main-password--container{
-    position: relative;
-    margin: 0px auto 20px auto;
-    width: 320px;
-    height: 100%;
-}
-.main-password-container--item{
-    position: relative;
-    margin: 0px auto 0px 20px;
-    width: 120px;
-    height: 20px;
-
-    background-color: var(--ReyCopas-backgorund2);
-    border: 2px solid var(--ReyCopas-backgorund2);
-}
-.main-password-container--item a{
     font-style: normal;
     font-weight: bold;
     font-size: 1rem;
-    line-height: 1.3rem;
-
-    text-decoration: none;
-
-    color: #FFFFFF;
 }
-.main-terms--container{
-    display: flex;
-    position: relative;
-    margin: 0px auto 20px auto;
-    width: 320px;
-    height: 40px;
+.main-welcome{
+    margin: 0px 0px 20px 0px;
+    font-size: 2.5rem;
 }
-.main-terms--icono{
+.main-container--box{
     position: relative;
-    margin: 20px 20px 0px 20px;
-    width: 20px;
-    font-size: 2rem;
-    color:white;
 }
-.main-terms--container p{
-    position: relative;
-    margin: 20px 20px 0px 20px;
-    width: 280px;
-    height: 20px;
-    /* top: 20px;
-    left: 80px; */
-
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-
-    color: #FFFFFF;
-}
-.boton{
-    position: relative;
-    margin: 40px auto 0px calc(50% - 110px);
-    width: 220px;
-    height: 40px;
-
-    background: #262626;
-    border: 2px solid #262626;
+.main-container--data{
+    width: 85vw;
+    height: 40px;   
+    margin: 10px 0px 10px 0px;
+    padding: 20px 20px 20px 50px;
+    background-color: #333333;
+    color: white;
+    border: none;
     border-radius: 5px;
+    -webkit-appearance: none;
 }
-.boton a{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-
+.main-container--data:focus{
+    background-color: #333333;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+}
+.main-container--icono{
+    position: absolute;
+    color: white;
+}
+.main-container--password{
+    position: relative;
+    margin: 10px auto 20px auto;
+    width: 90vw;
+    height: 20px;
+}
+.main-container-password--item{
+    position: absolute;
+    width: 150px;
+    height: 20px;
     text-decoration: none;
-    color: #FFFFFF;
+    background-color: var(--ReyCopas-backgorund2);
+    border: 2px solid var(--ReyCopas-backgorund2);
+}
+.main-container-password--item a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-decoration: none;
+    color: white;
+}
+.main-container--options{
+    position: relative;
+    display: flex;
+}
+.main-container--options i{
+    font-size: 3rem;
+}
+.main-container--options p{
+    margin: 4px auto 0px 15px;
+    font-weight: normal;
+}
+.main-container-18check{
+    background-color: var(--ReyCopas-black);
+    border: none;
+    color: white;
+}
+.main-container-button{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: calc(50% - 60px);
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+.main-container-moreOptions{
+    position: relative;
+    margin: 80px auto 20px auto;
+    text-align: center;
+}
+.main-container-moreOptions button{
+    position: relative;
+    margin: 20px 25px 0px 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #333333;
+    border: none;
+    border-radius: 30px;
+}
+.main-container-moreOptions span{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
 }

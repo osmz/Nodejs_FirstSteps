@@ -1,0 +1,126 @@
+/* --------------- SCROLL IMAGE  --------------- */
+.scroll-img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+.search-bar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 45px;
+    background-color: #FFFFFF;
+    top: calc(100% - 22.5px);
+    left: calc(50% - 135px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.search-bar p {
+    width: 80%;
+    text-align: start;
+    padding: 5px 0px 0px 0px;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--ReyCopas-black);
+}
+.search-bar i{
+    margin: 0px 10px 0px 10px;
+}
+/* --------------- CATEGORIES  --------------- */
+.drink-categories{
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    margin: 35px 0px 0px 0px;
+    background-color: var(--ReyCopas-background);
+}
+.card-categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-categories article{
+    margin: 15px 0px 0px 0px;
+    width: 100px;
+    height: 80px;
+}
+.icon-group{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+.backgroundIcon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: calc(50% - 25px);
+    top: 0px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.icon-categories{
+    position: absolute;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+/* --------------- PRODUCT CARD  --------------- */
+.main-products{
+    padding: 0px 0px 60px 0px;
+}
+.main-products h1{
+    padding: 0px 0px 0px 15px;
+}
+.product-section{
+    display: flex;
+    height: 250px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.product-card{
+    position: relative;
+    min-width: 110px;
+    max-width: 120px;
+    min-height: 220px;
+    max-height: 260px;
+    text-align: center;
+    margin: 10px 0px 20px 15px;
+    scroll-snap-align: center;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.product-card .heart {
+    position: absolute;
+    left: calc(100% - 30px);
+    top: calc(0% + 5px);
+    text-align: end;
+}
+.product-card img {
+    width: 90px;
+    height: 100px;
+    margin: 10px 0px 0px 0px;
+}
+.product-info{
+    width: 100%;
+    text-align: left;
+    padding: 10px 0px 0px 10px;
+    line-height: 2rem;
+}
+.shop-car{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    left: calc(50% - 25px);
+    top: calc(100% - 35px);
+    text-align: center;
+    background: var(--ReyCopas-black);
+    border-radius: 5px;
+    border: none;
+}

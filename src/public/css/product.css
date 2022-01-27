@@ -1,0 +1,58 @@
+/* --------------- SCROLL IMAGE  --------------- */
+.scroll-img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+.search-bar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 45px;
+    background-color: #FFFFFF;
+    top: calc(100% - 22.5px);
+    left: calc(50% - 135px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.search-bar p {
+    width: 80%;
+    text-align: start;
+    padding: 5px 0px 0px 0px;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--ReyCopas-black);
+}
+.search-bar i{
+    margin: 0px 10px 0px 10px;
+}
+/* --------------- CATEGORIES  --------------- */
+.drink-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 40px 0px 5px 0px;
+    background-color: var(--ReyCopas-background);
+}
+.drink-icon{
+    position: relative;
+    margin: 0px 10px 0px 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+/* --------------- PRODUCT CARD  --------------- */
+.main-container--items{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 0px 60px 0px;
+}
+.product-card{
+    margin: 10px 15px 20px 15px;
+}
+

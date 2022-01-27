@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head.html') %>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/mainPage.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <%- include('partials/header.html') %>
+    <main>
+        <section class="scroll-img">
+            <img src="/img/scroll.jpg" alt="imagenes de bebidas">
+            <div class="search-bar">
+                <i class="bi bi-search" style="font-size: 3rem; color:var(--ReyCopas-orange);"></i>
+                <p>Search drink</p>
+                <i class="bi bi-mic" style="font-size: 3rem; color:var(--ReyCopas-orange);"></i>
+            </div>
+        </section>
+        <section class="drink-section">
+            <div class="drink-icon">
+                <span class="backgroundIcon" style="background-image: url('/img/iconBackground.svg');"></span>
+                <span class="icon-categories" style="background-image: url('/img/beer.svg'); width: 22px; height: 25px; left: calc(50% - 11px); top: calc(50% - 12.5px);"></span>
+            </div>
+            <div>
+                <h2>Cerveza</h2>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="main-container--items">
+            <article class="product-card">
+                <i class="bi bi-heart heart" style="font-size: 3rem; color:var(--ReyCopas-orange);"></i>
+                <img src="/img/corona.png" alt="">
+                <div class="product-info">
+                    <p>Corona</p>
+                    <p>750 ml</p>
+                    <p>$ 00.000</p>
+                </div>
+                <button type="button" class="shop-car" role="button">
+                    <i class="bi bi-cart2" style="font-size: 2.8rem; color:var(--ReyCopas-orange);"></i>
+                </button>
+            </article>
+            <article class="product-card">
+                <i class="bi bi-heart-fill heart" style="font-size: 3rem; color:var(--ReyCopas-orange);"></i>
+                <img src="/img/aguila.png" alt="">
+                <div class="product-info">
+                    <p>Aguila</p>
+                    <p>750 ml</p>
+                    <p>$ 00.000</p>
+                </div>
+                <button type="button" class="shop-car" role="button">
+                    <i class="bi bi-cart2" style="font-size: 2.8rem; color:var(--ReyCopas-orange);"></i>
+                </button>
+            </article>
+            <article class="product-card">
+                <i class="bi bi-heart heart" style="font-size: 3rem; color:var(--ReyCopas-orange);"></i>
+                <img src="/img/poker.png" alt="">
+                <div class="product-info">
+                    <p>Poker</p>
+                    <p>750 ml</p>
+                    <p>$ 00.000</p>
+                </div>
+                <button type="button" class="shop-car" role="button">
+                    <i class="bi bi-cart2" style="font-size: 2.8rem; color:var(--ReyCopas-orange);"></i>
+                </button>
+            </article>
+        </section>
+    </main>
+
+    <%- include('partials/footer.html') %>
+    <%- include('partials/foot.html') %>
+
+</body>
+</html>
